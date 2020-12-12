@@ -6,7 +6,8 @@ matplotlib
 scikit-image
 tensorflow==1.14.0
 keras==2.0.8
-opencv-python-headless
+opencv-python
+libgl1-mesa-glx
 h5py
 imgaug
 gunicorn
