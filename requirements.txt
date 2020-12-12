@@ -1,4 +1,3 @@
-libqtgui4
 python3-pyqt5
 numpy
 scipy
