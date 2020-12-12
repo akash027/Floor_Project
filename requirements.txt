@@ -1,6 +1,3 @@
-
-libatlas-base-dev
-libjasper-dev
 libqtgui4
 python3-pyqt5
 numpy
