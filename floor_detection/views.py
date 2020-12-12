@@ -11,7 +11,7 @@ import numpy as np
 import skimage.io
 import matplotlib
 import matplotlib.pyplot as plt
-import cv2
+#import cv2
 import base64
 import tensorflow as tf
 import skimage.draw
@@ -103,9 +103,11 @@ def predictImage(request):
 ############################################################################################################
 
 	def color_splash(image, mask, floor_image=None):
-	    floor = cv2.imread("./media/floor_img/37021.jpg")
-	    floor = cv2.resize(floor, image.shape[1::-1])
-	    floor_image = cv2.cvtColor(floor, cv2.COLOR_BGR2RGB)
+	    #floor = cv2.imread("./media/floor_img/37021.jpg")
+	    #floor = cv2.resize(floor, image.shape[1::-1])
+	    #floor_image = cv2.cvtColor(floor, cv2.COLOR_BGR2RGB)
+	    floor = Image.open("./media/floor_img/37021.jpg")
+	    floor = floor.resize(image.shape[1::-1])
 	    
 	    if mask.shape[-1] > 0:
 	        mask = (np.sum(mask, -1, keepdims=True) >= 1)
