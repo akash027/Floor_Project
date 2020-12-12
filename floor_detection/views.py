@@ -109,7 +109,7 @@ def predictImage(request):
 			# We're treating all instances as one, so collapse the mask into one layer
 			mask = (np.sum(mask, -1, keepdims=True) >= 1)
 			splash = np.where(mask, image, gray).astype(np.uint8)
-	    else:
+		else:
 			splash = gray.astype(np.uint8)
 		return splash
 	    #floor = cv2.imread("./media/floor_img/37021.jpg")
