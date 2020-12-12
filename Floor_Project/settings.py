@@ -26,7 +26,7 @@ SECRET_KEY = 'x0t4n+r7m7#il2%sbdda=imhrnr!4bc4pyub!=e#s$q+568qu*'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['https://floordet.herokuapp.com/']
+ALLOWED_HOSTS = ['https://floordet.herokuapp.com/', '.herokuapp.com']
 
 
 # Application definition
