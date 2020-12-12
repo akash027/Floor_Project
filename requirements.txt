@@ -10,6 +10,5 @@ opencv-python
 h5py
 imgaug
 gunicorn
-django
-libgl1
+django==1.11.8
 IPython[all]
