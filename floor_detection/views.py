@@ -2,8 +2,6 @@ from django.shortcuts import render
 from django.core.files.storage import FileSystemStorage
 
 
-import psycopg2
-
 import io
 import os
 import sys
