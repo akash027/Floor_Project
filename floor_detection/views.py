@@ -22,7 +22,7 @@ from keras import backend as K
 
 # Root directory of the project
 ROOT_DIR = os.path.abspath("../")
-#print(ROOT_DIR)
+print("ROOT_DIR ",ROOT_DIR)
 
 # Import Mask RCNN
 sys.path.append(ROOT_DIR)  # To find local version of the library
