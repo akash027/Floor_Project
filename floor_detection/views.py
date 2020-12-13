@@ -24,7 +24,7 @@ from keras import backend as K
 #ROOT_DIR = os.path.abspath("../")
 
 # Import Mask RCNN
-#sys.path.append(ROOT_DIR)  # To find local version of the library
+sys.path.append(ROOT_DIR)  # To find local version of the library
 import Floor_Mask_RCNN.mrcnn.model as modellib
 
 # Import COCO config
