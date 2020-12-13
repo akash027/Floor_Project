@@ -25,12 +25,10 @@ from keras import backend as K
 
 # Import Mask RCNN
 #sys.path.append(ROOT_DIR)  # To find local version of the library
-from Floor_Mask_RCNN.mrcnn import utils
 import Floor_Mask_RCNN.mrcnn.model as modellib
-from Floor_Mask_RCNN.mrcnn import visualize
+
 # Import COCO config
-sys.path.append("Floor_Mask_RCNN/samples/coco/")
-#sys.path.append(os.path.join(ROOT_DIR, "Floor_Mask_RCNN/samples/coco/"))  # To find local version
+sys.path.append(os.path.join(ROOT_DIR, "Floor_Mask_RCNN/samples/coco/"))  # To find local version
 
 #import coco
 from Floor_Mask_RCNN.samples import coco
