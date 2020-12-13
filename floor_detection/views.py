@@ -26,9 +26,9 @@ ROOT_DIR = os.path.abspath("../")
 
 # Import Mask RCNN
 sys.path.append(ROOT_DIR)  # To find local version of the library
-#from mrcnn import utils
+from Floor_Mask_RCNN.mrcnn import utils
 import Floor_Mask_RCNN.mrcnn.model as modellib
-#from mrcnn import visualize
+from Floor_Mask_RCNN.mrcnn import visualize
 # Import COCO config
 sys.path.append(os.path.join(ROOT_DIR, "Floor_Mask_RCNN/samples/coco/"))  # To find local version
 
