@@ -21,11 +21,11 @@ from io import BytesIO
 from keras import backend as K
 
 # Root directory of the project
-ROOT_DIR = os.path.abspath("../")
+ROOT_DIR = os.path.abspath("/app/")
 
 # Import Mask RCNN
 sys.path.append(ROOT_DIR)  # To find local version of the library
-import Floor_Mask_RCNN.mrcnn.model as modellib
+import mrcnn.model as modellib
 
 # Import COCO config
 sys.path.append(os.path.join(ROOT_DIR, "Floor_Mask_RCNN/samples/coco/"))  # To find local version
